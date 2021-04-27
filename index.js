@@ -6,4 +6,9 @@ function subtract(a,b){
     return a-b;
 }
 
-module.exports  = { sum,subtract };
+function reverseString(string){
+    return string.split("").reverse().join("");
+}
+
+
+module.exports  = { sum,subtract,reverseString };
