@@ -9,4 +9,9 @@ function subtract(a,b){
 function capitalised(string){
     return string.toUpperCase()
 }
-module.exports  = { sum,subtract,capitalised };
+
+function reverseString(string){
+    return string.split("").reverse().join("");
+}
+
+module.exports  = { sum,subtract,reverseString,capitalised };
