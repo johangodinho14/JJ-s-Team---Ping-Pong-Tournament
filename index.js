@@ -6,4 +6,7 @@ function subtract(a,b){
     return a-b;
 }
 
-module.exports  = { sum,subtract };
+function capitalised(string){
+    return string.toUpperCase()
+}
+module.exports  = { sum,subtract,capitalised };

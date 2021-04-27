@@ -1,4 +1,4 @@
-const {sum,subtract} = require('./index.js')
+const {sum,subtract,capitalised} = require('./index.js')
 
 describe('Basic Mafs',()=>{
 
@@ -10,5 +10,10 @@ describe('Basic Mafs',()=>{
     test("two minus two equals zero",()=>{
         expect(subtract(1,1)).toBe(0);
         expect(subtract(5,2)).toBe(3);
+    })
+
+    test("capitalised string",()=>{
+        expect(capitalised('hello')).toBe('HELLO');
+        expect(capitalised('bonjour')).toBe('BONJOUR');
     })
 })
