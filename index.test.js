@@ -1,5 +1,11 @@
 const {sum,subtract,reverseString,capitalised} = require('./index.js')
 
+describe('Smoke Test',()=>{
+    test('1+2 equals 3',()=>{
+        expect(1+2).toBe(3);
+    })
+})
+
 describe('Basic Mafs',()=>{
 
     test("Check that tests are working",()=>{
@@ -15,6 +21,7 @@ describe('Basic Mafs',()=>{
     test("capitalised string",()=>{
         expect(capitalised('hello')).toBe('HELLO');
         expect(capitalised('bonjour')).toBe('BONJOUR');
+    })
 
     test("hello turns into olleh",()=>{
         expect(reverseString('hello')).toBe('olleh');
